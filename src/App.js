@@ -148,7 +148,7 @@ const WeatherApp = () => {
   const [unit, setUnit] = useState("metric"); 
   const [weatherData, setWeatherData] = useState(null);
   const [coordinates, setCoordinates] = useState(null); // Estado para coordenadas
-  const API_KEY = ""; 
+  const API_KEY = process.env.REACT_APP_API_KEY; 
 
   const fetchWeatherData = async () => {
     try {
